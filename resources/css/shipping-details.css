@@ -1,0 +1,393 @@
+.shipping-details-container {
+
+    display: flex;
+    flex-direction: row;
+    gap: 240px;
+    margin-top: 30px;
+}
+
+
+.shipping-details-container .details-form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.details-form h1 {
+    top: unset;
+    position: relative;
+}
+
+
+.details-form .shipping-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+
+.details-form .shipping-form-container .form-group-1 {
+
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+
+}
+
+
+.details-form .shipping-form-container .form-group-1 input {
+
+    all: unset;
+    background-color: whitesmoke;
+    width: 216px;
+    height: 40px;
+    color: grey;
+    text-indent: 15px;
+
+
+}
+
+.details-form .shipping-form-container .form-group-1 input.error {
+    background-color: peachpuff;
+
+
+}
+
+
+
+.details-form .shipping-form-container .form-group-2 {
+
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+}
+
+
+.details-form .shipping-form-container .form-group-2 input {
+
+    all: unset;
+    background-color: whitesmoke;
+    width: 140px;
+    height: 40px;
+    color: grey;
+    text-indent: 15px;
+
+}
+
+
+.details-form .shipping-form-container .no-group {
+
+    all: unset;
+    background-color: whitesmoke;
+    width: 445px;
+    height: 40px;
+    color: grey;
+    text-indent: 15px;
+}
+
+
+
+
+
+
+.details-form .contact-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.details-form .contact-form-container input {
+
+    all: unset;
+    background-color: whitesmoke;
+    width: 445px;
+    height: 40px;
+    color: grey;
+    text-indent: 15px;
+
+}
+
+.details-form .contact-form-container label {
+
+    font-weight: 700;
+
+}
+
+
+.details-form .shipping-form-container .main-label {
+
+    font-weight: 700;
+
+}
+
+
+.form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-footer span {
+    font-size: 18px;
+    border-bottom: 2px solid black;
+    padding: 2px;
+}
+
+.form-footer button {
+
+    all: unset;
+    text-align: center;
+    width: 220px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 15px -1px, rgba(0, 0, 0, 0.3) 0px 1px 6px -1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+
+.form-footer button:hover {
+
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+.cart-content-container {
+    width: 326px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 150px;
+
+}
+
+
+.cart-content-container .items-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+
+}
+
+
+
+.cart-content-container .items-container::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+.cart-content-container .items-container img {
+    background-color: whitesmoke;
+    height: 67px;
+    width: 45px;
+
+
+
+}
+
+.cart-content-container .items-container .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+}
+
+.cart-content-container .items-container .item .portion-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+
+
+}
+
+
+.cart-content-container .items-container .item .portion-1 .product-details {
+    /* Flex container */
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-content-container .items-container .item .portion-1 .product-details .name {
+    /* Ensure minimum width */
+    min-width: 0;
+    /* Add this line */
+    width: 180px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+.cart-content-container .items-container .item .portion-1 .product-details .wrapper {
+    /* Ensure minimum width */
+    min-width: 0;
+    /* Add this line */
+    width: 150px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: grey;
+}
+
+
+
+
+.cart-content-container .cost-calculation {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cart-content-container .cost-calculation div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+}
+
+.cart-content-container .cost-calculation .shipping {
+
+
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pop-up-overlay {
+
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 1450px;
+    width: 100%;
+    display: flex;
+    top: -50px;
+    opacity: 1; 
+    transition: opacity 0.3s ease, top 0.3s ease;
+
+}
+
+.pop-up-overlay.hide {
+
+    opacity: 0; 
+    top: -100px;
+    pointer-events: none;
+
+
+}
+
+
+.pop-up-overlay .pop-up-sucess.hide {
+    opacity: 0; 
+    top: -100px;
+    pointer-events: none;
+}
+
+
+.pop-up-overlay .pop-up-sucess {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    margin-top: 350px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.pop-up-overlay .pop-up-sucess .content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+
+.pop-up-overlay .pop-up-sucess .content i {
+
+
+    border-radius: 50%;
+    border: 3px solid mediumseagreen;
+    color: mediumseagreen;
+    font-size: 60px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pop-up-overlay .pop-up-sucess .content button {
+
+
+
+    border: 1px solid mediumseagreen;
+    background-color: mediumseagreen;
+    color: white;
+    border-radius: 12px;
+    width: 130px;
+    height: 30px;
+    /* height: 120px;
+        width: 120px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

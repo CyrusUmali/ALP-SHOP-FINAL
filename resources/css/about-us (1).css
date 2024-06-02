@@ -1,0 +1,346 @@
+/* body {
+    font-family: 'Montserrat';
+} */
+/* nav {
+        background-color: black;
+        color: white;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    } */
+    h1 {
+        display: flex;
+        justify-content: center;
+        color: black;
+        margin-top: 60px;
+        font-size: 60px;
+        gap: 70px;
+      
+    }
+.Top {
+    width: 100%;
+}
+
+.Top img {
+    width: 100%;
+    max-width: 100%;
+
+    
+}
+
+.tagline {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    margin: 100px 0;
+}
+
+.tagline span {
+    font-weight: bold;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row1, .row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row2, .row3 {
+    margin-top: 50px;
+}
+.row2{
+    padding: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: black;
+    color: white;
+    border-radius: 5%;
+}
+
+.row3, .row4 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row1pic, .row2pic {
+    flex: 1;
+}
+
+.row1pic img {
+    width: 500px;
+    height: 700px;
+}
+
+.row2pic img {
+    width: 500px;
+    height: 700px;
+}
+
+.row3pic img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.row1pg, .row2pg {
+    flex: 1;
+    padding: 20px;
+}
+
+.row1pg span {
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 100px;
+}
+
+.row2pg span {
+    font-size: 40px;
+    padding-top: 100px;
+    padding-right: 50px;
+    margin-left: 600px;
+    font-weight: bold;
+}
+
+.row1pg p {
+    width: 500px;
+    text-align: left;
+    justify-content: right;
+    align-self: center;
+    align-items: center;
+    padding-left: 100px;
+    font-size: 20px;
+}
+
+.row2pg p {
+    width: 500px;
+    text-align: right;
+    margin-left: 300px;
+    justify-content: right;
+    align-items: center;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+.row3pg span {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    align-items: center;
+    font-weight: bold;
+}
+.row3pg p{
+    font-size: 20px;
+}
+.row3pg p, .row3pg span {
+    width: 1000px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.row4-header {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+
+.row4-header h2 {
+    font-size: 30px;
+    margin: 0;
+    margin-left: 350px;
+
+}
+
+.row4-header a {
+    all: unset;
+    font-size: medium;
+    font-weight: normal;
+    margin-left: 300px;
+}
+.row4pics{
+    display: flex;
+    align-self: center;
+    height: 400px;
+    width: 1000px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pic-container h3{
+    text-align: center;
+}
+#pic5, #pic6, #pic7, #pic8{
+    width: 200px;
+    height: 230px;
+    background-color: black;
+    border-radius: 10%;
+}
+@media only screen and (max-width: 600px) {
+            nav ul{
+                font-size: small;
+            }
+            .Top img {
+                width: 100%;
+                height: auto;
+            }
+
+            .tagline {
+                text-align: center;
+            }
+
+            .rows {
+                margin-top: 20px;
+                width: 100%;
+            }
+
+            .row1, .row2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .row2{
+                padding: 0;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            .row1pic img,
+            .row2pic img {
+                width: 100%;
+                height: auto;
+            }
+
+            .row1pg,
+            .row2pg,
+            .row3pg {
+                padding: 0;
+                font-size: small;
+            }
+
+            .row1pg p,
+            .row2pg p,
+            .row3pg p {
+                width: 100%;
+                text-align: justify;
+                font-size: small;
+                margin: 0;
+                padding: 0;
+            }
+            .row1pg span,
+            .row2pg span,
+            .row3pg span{
+                width: 100%;
+                text-align: justify;
+                margin: 0;
+                padding: 0;
+                font-size: medium;
+            }
+
+            .row1pg p, .row1pg span{
+                justify-content: flex-start;
+            }
+
+            .row2pg p, .row2pg span{
+                justify-content: flex-end;
+                margin-left: 0 auto;
+            }
+            .row2pg span, .row1pg span{
+                display: flex;
+                justify-content: center;
+                font-size: large;
+                align-items: center;
+                font-weight: bold;
+            }
+
+            .row3pg span {
+                display: flex;
+                justify-content: center;
+                font-size: large;
+                align-items: center;
+                font-weight: bold;
+            }
+
+            .row3pg p,
+            .row3pg span {
+                width: 100%;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .row4-header {
+                margin-top: 100px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+                color: white;
+                width: 100%;
+                height: 50px;
+            }
+            .row4{
+                margin-left: -50px;
+            }
+
+            .row4-header h2 {
+                font-size: 30px;
+                margin: 0;
+                margin-left: 60px;
+                text-align: center;
+            }
+
+            .row4-header a {
+                all: unset;
+                font-size: medium;
+                font-weight: normal;
+                margin-left: 50px;
+                text-align: center;
+            }
+
+            .row4pics {
+                display: flex;
+                align-self: center;
+                height: 400px;
+                width: 100%;
+                max-width: 100%;
+                justify-content: space-evenlyp;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 100px;
+                margin-top: 20px;
+                
+            }
+            #pic5, #pic6, #pic7, #pic8{
+                width: 150px;
+                height: 163px;
+                background-color: black;
+                border-radius: 10%;
+                
+            }
+            .pic-container h3{
+                margin-left: 50px;
+            }
+
+            .pic-container {    
+                flex: 0 0 auto;
+                width: 100px;
+                max-width: 100%;
+                margin-right: 10px;
+            }
+        }

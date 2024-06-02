@@ -1,0 +1,559 @@
+.content-container .reviews-container {
+    margin-top: 20px;
+    background-color: whitesmoke;
+    width: 1220px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.content-container .reviews-container img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.content-container .reviews-container .user-review {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 25px;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+
+.user-review .rating-score{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;  
+}
+
+
+.content-container .reviews-container .no-reviews {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 30px;
+
+}
+
+
+.content-container .reviews-container .no-reviews img {
+
+height: 200px;
+width: 200px;
+
+}
+
+
+
+.content-container .reviews-container .header {
+
+    padding-left: 30px;
+
+}
+
+.content-container .reviews-container .header .rating-score {
+
+    margin-top: -20px;
+  
+}
+
+.item-page-container {
+    margin-top: 90px;
+    display: flex;
+    gap: 30px;
+    max-width: 1220px;
+}
+
+.item-page-container .portion-1 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 600px;
+    /* flex: 50%; */
+    /* background-color: aqua; */
+    overflow-x: hidden;
+
+}
+
+
+.item-page-container .portion-2 {
+
+    display: flex;
+    /* flex: 50%; */
+    width: 600px;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+
+
+}
+
+
+.portion-2 .product-body .stocks {
+
+
+
+    width: 300px;
+
+
+}
+
+.item-page-container .portion-1 a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+
+}
+
+.item-page-container .portion-1 .showcase-img {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    height: 600px;
+    width: 480px;
+    overflow: hidden;
+    display: flex;
+
+    /* margin-left: 50px; */
+    /* box-shadow: 5px 4px 4px lightgray; */
+}
+
+.item-page-container .portion-1 .showcase-img img {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+
+}
+
+.item-page-container .portion-1 .variation-img-container {
+
+    display: flex;
+    flex-direction: column;
+    /* display: flex; */
+    /* justify-content: space-around; */
+
+    gap: 10px;
+
+
+    width: 90px;
+
+
+    /* width: 94%;  */
+    padding-bottom: 10px;
+}
+
+/* .item-page-container .portion-1 .variation-img-container::-webkit-scrollbar {
+    height: 10px;    
+}
+
+ 
+.item-page-container .portion-1 .variation-img-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
+}
+
+ 
+.item-page-container .portion-1 .variation-img-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+} */
+
+
+/* .item-page-container .portion-1 .variation-img-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;  
+} */
+
+.item-page-container .portion-1 .variation-img-container img {
+
+    background-color: whitesmoke;
+
+    /* width: 180px;
+    height: 163px; */
+
+    width: 87px;
+    height: 116px;
+    border-radius: 10px;
+
+    /* border-radius: 12px; */
+    flex-shrink: 0;
+
+}
+
+
+
+.variant-wrapper .Sizes,
+.variant-wrapper .Colors {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+
+.product-body .variant-wrapper .Colors span,
+.product-body .variant-wrapper .Sizes span {
+    /* border: 1px solid black; */
+    padding: 5px 12px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    border: 1px solid transparent;
+}
+
+
+
+/* CSS to apply hover effect for clickable sizes */
+/* .product-body .variant-wrapper .Sizes span[size-clickable="true"]:hover {
+    background-color: white;
+    border: 1px solid lightgray;
+    color: gray;
+    box-shadow: 3px 3px 0px lightgray;
+    transform: translate(-5px, -5px);
+} */
+
+.product-body .variant-wrapper .Sizes span:not([size-clickable="false"]):hover {
+    background-color: white;
+    border: 1px solid lightgray;
+    color: gray;
+    box-shadow: 3px 3px 0px lightgray;
+    transform: translate(-5px, -5px);
+}
+
+
+.product-body .variant-wrapper .Colors span:hover
+
+/* ,.product-body .variant-wrapper .Sizes span:hover */
+    {
+
+
+    background-color: white;
+    border: 1px solid lightgray;
+    color: gray;
+
+    box-shadow: 3px 3px 0px lightgray;
+    transform: translate(-5px, -5px);
+}
+
+
+
+.product-body .variant-wrapper .Colors span:active,
+.product-body .variant-wrapper .Sizes span:active {
+    animation: buttonClick 0.3s ease;
+
+
+}
+
+
+
+
+.product-body .variant-wrapper .head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+}
+
+.product-body .variant-wrapper .head .warning-color,
+.product-body .variant-wrapper .head .warning-size,
+.product-body .quantity .head .count {
+    color: red;
+    position: absolute;
+    left: 100px;
+    display: none;
+}
+
+.product-body .variant-wrapper .head .warning-color.show,
+.product-body .variant-wrapper .head .warning-size.show,
+.product-body .quantity .head .count.show {
+    color: red;
+    position: absolute;
+    left: 100px;
+    display: block;
+
+}
+
+.product-body .quantity div input {
+    all: unset;
+    width: 35px;
+    text-align: center;
+
+
+
+}
+
+.product-body .quantity div input::-webkit-inner-spin-button,
+.product-body .quantity div input::-webkit-outer-spin-button {
+
+    -webkit-appearance: none;
+
+
+}
+
+
+.product-body .quantity div button {
+    border: none;
+    background-color: transparent;
+    /* width: 30px; */
+
+}
+
+.product-body .quantity .head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+
+}
+
+.product-body .quantity .input-group {
+    border: 1px solid lightgray;
+    width: 85px;
+    padding: 3px 12px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    justify-content: center;
+
+}
+
+
+.product-body .stocks {
+    margin-top: 10px;
+
+    width: 85px;
+    padding: 3px 10px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+
+.product-body .action {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+.product-body .action .buy {
+    background-color: black;
+    border-radius: 4px;
+    padding: 6px 26px;
+    border: 1px solid black;
+    color: white;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+    /* Adding transition for smooth movement */
+
+
+}
+
+.product-body .action .buy:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 3px 3px 0px black;
+    transform: translate(-5px, -5px);
+    /* Move the button up and to the left */
+
+}
+
+.product-body .action .buy:active {
+    animation: buttonClick 0.3s ease;
+    /* Applying animation on button click */
+}
+
+
+@keyframes buttonClick {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+.product-body .action .cart {
+    background-color: whitesmoke;
+    border-radius: 4px;
+    padding: 6px 26px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+    transition: transform 0.3s ease;
+    /* Adding transition for smooth movement */
+
+
+}
+
+
+.wishResponse{
+    color: green;
+    font-size: 12px;
+}
+
+.wishResponse.show{
+    color: green;
+}
+
+.product-body .action .cart:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    color: gray;
+    border-radius: 6px;
+    box-shadow: 3px 3px 0px lightgray;
+    transform: translate(-5px, -5px);
+    /* Move the button up and to the left */
+
+}
+
+.product-body .action .cart:active {
+    animation: buttonClick 0.3s ease;
+    /* Applying animation on button click */
+}
+
+
+
+
+/* .product-body .action .cart {
+    background-color: whitesmoke;
+    border-radius: 4px;
+    padding: 6px 26px;
+    border: 1px solid lightgray;
+
+} */
+
+
+
+
+/* .product-body .action .wish {
+    background-color: salmon;
+    border-radius: 4px;
+    padding: 6px 16px;
+    color: white;
+    border: none;
+
+} */
+
+
+
+
+.product-body .action .wish {
+    background-color: salmon;
+    border-radius: 4px;
+    padding: 6px 16px;
+    border-radius: 4px;
+    color: white;
+    transition: transform 0.3s ease;
+    border: none;
+    /* Adding transition for smooth movement */
+
+
+}
+
+.product-body .action .wish:hover {
+    color: salmon;
+    background-color: white;
+    border: 1px solid salmon;
+    border-radius: 6px;
+    box-shadow: 3px 3px 0px salmon;
+    transform: translate(-5px, -5px);
+    /* Move the button up and to the left */
+
+}
+
+.product-body .action .wish:active {
+    animation: buttonClick 0.3s ease;
+    /* Applying animation on button click */
+}
+
+
+
+
+
+
+.product-body .description {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 873px) {
+
+
+ 
+
+    .content-container .reviews-container {
+     
+        width: 100% !important;
+      
+    } 
+    
+    .content-container .reviews-container .no-reviews {
+    
+       text-align: center;
+    
+    }
+    
+    
+    
+
+
+
+}
+
+
+
+
+

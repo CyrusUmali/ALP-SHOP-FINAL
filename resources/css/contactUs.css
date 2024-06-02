@@ -1,0 +1,528 @@
+.contact-us-container {
+    width: 1100px;
+    margin: 100px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: -80px;
+}
+
+
+.contact-us-container .info-portion {
+    width: 300px;
+    padding: 35px 0px;
+
+
+}
+
+.contact-us-container .info-portion i {
+
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.contact-us-container .info-portion .upper-block {
+
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+
+}
+
+
+.contact-us-container .info-portion .upper-block .head {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.contact-us-container .info-portion .lower-block .head {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.contact-us-container .info-portion .lower-block {
+
+
+
+    padding-top: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.contact-us-container .form-portion {
+
+    width: 800px;
+    display: flex;
+    align-items: end;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    gap: 32px;
+    padding: 30px;
+
+}
+
+.contact-us-container .form-portion .upper-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.contact-us-container .form-portion .upper-wrapper input {
+    all: unset;
+    width: 215px;
+    height: 30px;
+    background-color: whitesmoke;
+    color: gray;
+    padding: 10px;
+}
+
+.contact-us-container .form-portion textarea {
+    all: unset;
+    width: 720px;
+    padding: 10px;
+    color: grey;
+    background-color: whitesmoke;
+
+}
+
+
+.contact-us-container .form-portion .lower-wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+}
+
+
+.contact-us-container .form-portion button {
+    all: unset;
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+    height: 56px;
+    width: 215px;
+    background-color: black;
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 15px -1px, rgba(0, 0, 0, 0.3) 0px 1px 6px -1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-us-container .form-portion button:hover {
+
+    background-color: white;
+    color: black;
+
+}
+
+
+
+
+
+
+/* .visit-page-container{
+    background-color: black;
+    width: 900px;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 24px -1px, 
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+} */
+/* .visit-page-container span{
+    font-size: 30px;
+    width: 40%;
+    font-weight: 600;
+} */
+
+/* .visit-page-container button{
+ all: unset;
+    border-radius: 18px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    height: 40px;
+    padding: 0px 12px;
+    font-size: 12px;
+ cursor: pointer;
+ 
+} */
+/* 
+.visit-page-container button:hover{
+ 
+    background-color: whitesmoke
+
+   } */
+
+/* .visit-page-container img{
+ 
+    position: absolute;
+    height: 120px;
+    width: 120px; 
+    left: 60%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.visit-page-container {
+    background-color: black;
+    /* width: 900px; */
+    width: 60%;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 24px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.visit-page-container span {
+    font-size: 30px;
+    width: 40%;
+    font-weight: 600;
+}
+
+.visit-page-container button {
+    all: unset;
+    border-radius: 18px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    height: 40px;
+    padding: 0px 12px;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.visit-page-container button:hover {
+
+    background-color: whitesmoke
+}
+
+.visit-page-container img {
+
+    position: relative;
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+.pop-up-overlay {
+
+    position: fixed;
+    z-index: 12999;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 1450px;
+    width: 100%;
+    display: flex;
+    top: -50px;
+    opacity: 1;
+    /* Initially visible */
+    transition: opacity 0.3s ease, top 0.3s ease;
+
+
+}
+
+.pop-up-overlay.hide {
+
+    opacity: 0;
+    /* Make it transparent */
+    top: -100px;
+    /* Move it further up to hide */
+    pointer-events: none;
+    /* Make it not clickable */
+
+
+}
+
+
+.pop-up-overlay .pop-up-sucess.hide {
+    opacity: 0;
+    /* Initially transparent */
+    transition: opacity 0.3s ease, margin-top 0.3s ease;
+    margin-top: 0px;
+}
+
+.pop-up-overlay .pop-up-sucess {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    margin-top: 290px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    overflow: hidden;
+    opacity: 1;
+    /* Make it visible */
+    transition: opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+
+.pop-up-overlay .pop-up-sucess .content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+
+.pop-up-overlay .pop-up-sucess .content i {
+
+
+    border-radius: 50%;
+    border: 3px solid mediumseagreen;
+    color: mediumseagreen;
+    font-size: 60px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pop-up-overlay .pop-up-sucess .content button {
+
+
+
+    border: 1px solid mediumseagreen;
+    background-color: mediumseagreen;
+    color: white;
+    border-radius: 12px;
+    width: 130px;
+    height: 30px;
+    /* height: 120px;
+    width: 120px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+.pop-up-overlay .pop-up-sucess .content button:hover {
+
+    background-color: white;
+    color: mediumseagreen;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.pop-up-overlay .pop-up-failed.hide {
+    opacity: 0; margin-top: 0px;
+    /* Initially transparent */
+    transition: opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+.pop-up-overlay .pop-up-failed {
+    position: absolute;
+    z-index: 1;
+    margin-top: 290px;
+    background-color: white; 
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    overflow: hidden;
+    opacity: 1;
+    /* Make it visible */
+    transition: opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+
+.pop-up-overlay .pop-up-failed .content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+
+.pop-up-overlay .pop-up-failed .content i {
+
+
+    border-radius: 50%;
+    border: 3px solid tomato;
+    color: tomato;
+    font-size: 60px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pop-up-overlay .pop-up-failed .content button {
+
+
+
+    border: 1px solid tomato;
+    background-color: tomato;
+    color: white;
+    border-radius: 12px;
+    width: 130px;
+    height: 30px;
+    /* height: 120px;
+    width: 120px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.pop-up-overlay .pop-up-failed .content button:hover {
+
+    background-color: white;
+    color: tomato;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .contact-us-container {
+        display: block;
+        max-width: 100%;
+    }
+
+    .contact-us-container h1 {
+        margin-left: 160px;
+    }
+
+    .contact-us-container .info-portion {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-us-container .info-portion .upper-block .head {
+        margin-left: 170px;
+    }
+
+    .contact-us-container .info-portion .lower-block .head {
+        margin-left: 170px;
+    }
+
+    .contact-us-container .form-portion {
+        display: block;
+        max-width: 80%;
+        margin-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contact-us-container .form-portion .upper-wrapper {
+        display: block;
+    }
+
+    .contact-us-container .form-portion .upper-wrapper input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-us-container .form-portion textarea {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
